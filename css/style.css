@@ -11,6 +11,9 @@ font-family: 'Rock Salt', cursive; */
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background-color: black;
+}
 
 .content{
   max-width: 1250px;
@@ -58,7 +61,7 @@ font-family: 'Rock Salt', cursive; */
   list-style: none;
 }
 .menu-list li a{
-  color: #fff;
+  color: rgb(168, 168, 168);
   font-size: 1.5rem;
   padding: 10px;
   font-weight: 500;
@@ -71,7 +74,7 @@ font-family: 'Rock Salt', cursive; */
           display: inline-flex;  
 }
 .social-icon  a{
-   color: #fff;
+   color: rgb(228, 228, 228);
    font-size: 1.5rem !important;
   padding: 20px;
   font-weight: 500;
@@ -86,7 +89,7 @@ font-family: 'Rock Salt', cursive; */
           color: rgb(0, 0, 0);
 }
 .menu-list li a:hover{
-  color: #00798f;
+  color: #ffffff;
   letter-spacing: 3px;
   text-decoration: underline;
 }
@@ -118,25 +121,28 @@ font-family: 'Rock Salt', cursive; */
 /* banner :start s */
 .header{
   position: relative;
-  height: 100vh;
+  height: 500px;
   min-height: 100%;
 
 }
 .title h1{
   font-size: 2rem;
   font-family: 'Courier New', Courier, monospace;
-  padding-top: 10em;
+  padding-top: 6em;
   text-align: center;
   color: #fff;
   background-color: white;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 6px 6px 0px rgba(226, 226, 226, 0.555);
+  /* -webkit-text-fill-color: transparent; */
+  text-shadow: 6px 6px 0px rgba(179, 179, 179, 0.39);
   display:block;
   position: relative;
   z-index: 1;
 
 }
+
+
+
 @keyframes move-twink-back {
   from {background-position:0 0;}
   to {background-position:-10000px 5000px;}
@@ -172,6 +178,7 @@ animation:move-twink-back 200s linear infinite;
   justify-content: center;
   background-color: black;
   padding: 0px 20px;
+ 
 }
 
 
@@ -189,19 +196,22 @@ animation:move-twink-back 200s linear infinite;
 }
 .about-card .meta {
   position: relative;
-  height: 200px;
+  height: 300px;
   
 }
+
 .about-card .photo {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+ 
   background-size: cover;
   background-position: center;
   
 }
+
 .about-card .description {
   padding: 1rem;
   background: rgb(0, 0, 0);
@@ -228,24 +238,226 @@ animation:move-twink-back 200s linear infinite;
   content: "";
   position: absolute;
   height: 5px;
-  background: #ffffff;
+ 
+  background: #000000;
   width: 35px;
   top: 0.3rem;
   border-radius: 3px;
 }
-.sew{
-  height: 100vh;
+
+
+/* skill  */
+
+.skills{
+ color: #fff;
+  background-color: rgb(0, 0, 0);
+
+}
+.skills-text {
+ 
+  color: #fff;
+  text-align: center;
+  /* font-size: 2rem; */
   
-  background-color: wheat;
+}
+.skills-text h1{
+  
+  font-size: 5rem;
+  padding: 30PX;
+  font-family: 'Dancing Script', cursive;
+}
+.skills-text p{
+  position: relative;
+  left: -20%;
+  font-size: 3rem;
+  padding: 20px 0px;
+  font-family: 'Dancing Script', cursive;
+}
+.skills-part{
+ 
+  width: 700px;
+  margin:auto;
+  padding: 20px;
+ 
+
+  
+}
+.skills-part li{
+  margin: 20px 0;
+  list-style: none;
+}
+.skills-part li h3{
+  padding: 20px;
+}
+.skills-part .bar{
+  background-color: #743131;
+  display: block;
+  height: 5px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow:  0 0 30px #ff0000fa;
+}
+.skills-part .bar span{
+  height: 2px;
+  float: left;
+  border-radius: 3px;
+  background: #ff0000;
+
+}.html{width: 90%; animation: html 10s;}.css{ width: 60%; animation: css 10s;}.boostrap{width: 60%; animation: boostrap 10s; }.javascript{width: 30%; animation: javascript 10s;}
+
+
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
 }
 
+@keyframes boostrap {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+
+@keyframes javascript {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 30%;
+  }
+}
+
+/* project section  */
+.project{
+  text-align: center;
+  color: #fff;
+  height: 300px;
+}
+.project-text {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+}
+/* footer start  */
+footer{
+  color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* text-align: center; */
+ 
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+footer .container .footer{
+  margin-right: 30px;
+}
+footer .container  .footer.aboutus{
+  width: 40%;
+}
+footer .container h2{
+  position: relative;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+footer .container h2::before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 50px;
+  height: 2px;
+  background-color: blue;
+}
+.footer-icon{
+  display: flex;
+  margin-top: 20px;
+padding: 0px 30px;
+}
+.footer-icon li{
+    list-style: none;
+   
+}
+.footer-icon li a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  color: rgb(17, 228, 10);
+  text-decoration: none;
+  background: rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  
+  border-radius: 30px;
+}
+.footer-icon li a:hover{
+  background-color: #000000;
+  font-size: 3rem;
+}
+
+.contentt{
+  width: calc(35% - 60px);
+  margin-right: 0 !important;
+
+}
+.contentt .info li{
+  display: flex;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.contentt .info li span:nth-child(1){
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.contentt .info li span{
+  color: #999;
+  
+}
+.contentt .info li a{
+  text-decoration: none;
+  color: #999;
+}
+.contentt .info li span:hover{
+  color: #fff;
+}
+.contentt .info li a:hover{
+  color: #fff;
+}
 /* responsive   */
 
 @media (max-width: 868px) {
   
   .navbar .logo a {
-     margin-left: 20px !important;
+     margin-left: 50px !important;
       color: rgb(255, 255, 255);
+      font-size: 1.5rem;
       
         }
 .navbar .logo a span{
@@ -273,7 +485,7 @@ animation:move-twink-back 200s linear infinite;
     display: block;
     padding: 10px 0 ;
     text-align: center;
-    background: rgba(5, 5, 5, 0.52);
+    background: rgba(5, 5, 5, 0.781);
     transition: all 0.3s ease;
   }
 
@@ -291,8 +503,58 @@ animation:move-twink-back 200s linear infinite;
   .navbar.show .menu-list li a{
     margin-left: 0px;
   }
+  .skills-text h1{
+  
+    font-size: 3rem;
+    padding: 10PX;
+    font-family: 'Dancing Script', cursive;
+  }
+  .skills-text p{
+    position: relative;
+    left: -20%;
+    font-size: 2rem;
+    padding: 5px 0px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .skills-part{
+    width: 400px;
+    margin:auto;
+    padding: 10px;
+   font-size: 1rem;
+    
+}
+.skills-part h3{
+  font-size: 1rem;
+}
+footer{
+  padding: 40px;
+}
+footer .container{
+  flex-direction: column;
+}
+footer .container .footer{
+  margin-right:  0;
+  margin-bottom: 40px;
+}
+footer .container .footer.aboutus{
+  width: 100%;
+  text-align: center;
+}
+ .footer-icon {
+  justify-content: center;
+  text-align: center ;
+}
+footer .contentt{
+  width: 100%;
+  text-align: center;
 
 }
+footer .contentt .info li{
+  justify-content: center;
+}
+}
+
 @media (max-width: 380px) {
   .navbar .logo a{
     font-size: 27px;

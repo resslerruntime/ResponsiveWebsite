@@ -3,10 +3,10 @@
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
-      
+          <title>MackScript</title>
+    
           <!-- css add -->
-          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="/css/style.css">
         </head> 
 <body>
   <nav class="navbar">
@@ -19,15 +19,16 @@
         <div class="icon cancel-btn">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Contact</a></li>    
+        <li><a href="/index.html"  style="color: rgb(241, 241, 241) !important;">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="#project">Project</a></li>
+      
+        
+        <li><a href="#contact">Contact</a></li>    
         <li class="social-icon">
-          <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-github" aria-hidden="true"></i></i></a>
-          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+          <a href="https://twitter.com/mackscript"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                          <a href="https://github.com/mackscript"><i class="fa fa-github" aria-hidden="true"></i></i></a>
+                          <a href="https://www.instagram.com/mackscript/"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
         </li> 
       </ul>
      
@@ -43,45 +44,102 @@
         <div class="twinkling"></div> 
           <div class="clouds"></div>
        <div class="title">
-   <h1>Hi i'm mack </h1>
+        
+          <h1>hi,I'm Mack  </h1>
+         
  </div>
 </div>
 
 <!-- abiut section  -->
-<div class="about">
+<div class="about" id="about">
 <div class="about-card">
   <div class="meta">
-    <div class="photo" style="background-image:url(/Images/mack.black.jpg)"></div>
+    <div class="photo" style="background-image:url(/Images/mack.black.jpg) " ></div>
    
   </div>
   <div class="description">
-    <h1>Hi, My name is mack</h1>
+    <h1>I’m Mack, i'm a Frontend Devoloper</h1>
   
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem id perferendis, ad dolor deleniti esse temporibus culpa ducimus error est amet debitis beatae explicabo, consequuntur reprehenderit tenetur consectetur, quibusdam ipsam! Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+    <p > Hi 👋, I'm Mack. A passionate front-end developer from India. I'm a beginner, I'm a student. I'm learning JavaScript now. 2021 Goals build more Project ; front-end development, email design, marketing site pages, app UI/UX, to my current role designing products for mobile platforms....</p>
     <p class="read-more">
-      <a href="#">Read More</a>
+      <a href="/about.html">Read More</a>
     </p>
   </div>
 </div>
 </div>
 
 
-<div class="sew">
-
+<div class="skills">
+  <div class="skills-text">
+    <h1>Abilities</h1>
+    <p>skills :</p>
   </div>
-  
+ <div class="skills-part">
+ <li>
+  <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
+ </li>
+ 
+ <li>
+  <h3>CSS</h3><span class="bar"><span class="css"></span></span>
+ </li>
+ 
+ <li>
+  <h3>BOOSTRAP</h3><span class="bar"><span class="boostrap"></span></span>
+ </li>
+ 
+ <li>
+  <h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span>
+ </li>
+</div>
+  </div>
 
-
+  <!-- Project section  -->
+<div class="project" id="project">
+  <h1 class="project-text">Project</h1>
+  <p>Project is coming</p>
+</div>
 
  
+<!-- fotter  -->
 
- 
-         
-   <!-- js file  -->
-  <script src="app.js"></script>
-       
-  <!-- font awesome link  -->
-  <script src="https://kit.fontawesome.com/ffdff9d9a9.js" crossorigin="anonymous"></script>
+<footer id="contact">
+  <div class="container">
+    <div class="footer aboutus">
+        <h2>About us</h2>
+        <p>Hi 👋, I'm Make. A passionate front-end developer from India. I'm a beginner, I'm a student. I'm learning JavaScript now. 2021 Goals build more Project.</p>
+        <ul class="footer-icon">
+          <li><a href="https://github.com/mackscript"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/mackscript"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/mackscript/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          
+        </ul>
+    </div>
    
+    <div class="footer contentt">
+      <h2>Contact</h2>
+      <ul class="info">
+        <li>
+          <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+          <span>kolkata <br> WestBengal, india</span>
+        </li>
+        <li>
+          <span><i class="fa fa-envelope" aria-hidden="true"></i></i></span>
+        <p><a href="www.gmail.com">riponhaldar006@gmail.com</a></p>
+        </li>
+   
+      </ul>
+   
+    </div>
+   
+  </div>
+</footer>
+
+
+   <!-- js file  -->
+  <script src="/src/app.js"></script>
+  <script src="/src/typed.js"></script>
+
+  <script src="https://kit.fontawesome.com/ffdff9d9a9.js" crossorigin="anonymous"></script>
+  
 </body>
 </html>
