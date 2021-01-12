@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mr+Dafoe&family=Rock+Salt&display=swap');
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Rock Salt', cursive; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  background: #000000;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ .logo  a{
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Mr Dafoe', cursive;
+ /* sdsdsa */
+
+}
+.logo a span{
+          color:white;
+          font-family: 'Rock Salt', cursive;
+}
+
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-icon{
+          margin: -10px 0px 0px 30px ;
+          display: inline-flex;  
+}
+.social-icon  a{
+   color: #fff;
+   font-size: 1.5rem !important;
+  padding: 20px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-icon a{
+          list-style: none;
+}
+.social-icon a:hover{
+          color: rgb(0, 0, 0);
+}
+.menu-list li a:hover{
+  color: #00798f;
+  letter-spacing: 3px;
+  text-decoration: underline;
+}
+.icon{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+
+.icon{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/* banner :start s */
+.header{
+  position: relative;
+  height: 100vh;
+  min-height: 100%;
+
+}
+.title h1{
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 10em;
+  text-align: center;
+  color: #fff;
+  background-color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 6px 6px 0px rgba(226, 226, 226, 0.555);
+  display:block;
+  position: relative;
+  z-index: 1;
+
+}
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling, .clouds {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+
+.stars {
+background:#000 url(/Images/stars.png) repeat top center;
+z-index:0;
+}
+
+.twinkling{
+background:transparent url(/Images/twinkling.png) repeat top center;
+z-index:1;
+animation:move-twink-back 200s linear infinite;
+}
+
+/* about section  */
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 0px 20px;
+}
+
+
+.about-card {
+  
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  
+  color: #fff;
+}
+.about-card .meta {
+  position: relative;
+  height: 200px;
+  
+}
+.about-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  
+}
+.about-card .description {
+  padding: 1rem;
+  background: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+}
+.about-card .description h1 {
+  line-height: 1;
+  padding: 10px 0px ;
+  font-size: 1.7rem;
+}
+
+  .about-card p {
+    position: relative;
+    padding: 10px 0px;
+  }
+
+.about-card .description .read-more a {
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+}
+.about-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #ffffff;
+  width: 35px;
+  top: 0.3rem;
+  border-radius: 3px;
+}
+.sew{
+  height: 100vh;
+  
+  background-color: wheat;
+}
+
+/* responsive   */
+
+@media (max-width: 868px) {
+  
+  .navbar .logo a {
+     margin-left: 20px !important;
+      color: rgb(255, 255, 255);
+      
+        }
+.navbar .logo a span{
+ color: rgb(255, 231, 231);
+}
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .social-icon a{
+    display: block;
+    font-size: 2rem !important;
+    padding: 20px !important;
+ 
+}
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 10px 0 ;
+    text-align: center;
+    background: rgba(5, 5, 5, 0.52);
+    transition: all 0.3s ease;
+  }
+
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 80px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
+
+@media (min-width:868px) {
+  .about-card {
+    flex-direction: row;
+    max-width: 900px;
+    max-height: 900px;
+  
+
+  }
+  .about-card p {
+    position: relative;
+    padding: 20px 0px;
+    font-size: 1rem;
+  }
+  .about-card .read-more{
+    font-size: o.5rem;
+  }
+  .about-card .meta {
+    flex-basis: 40%;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .about-card .description {
+    flex-basis: 60%;
+
+  }
+  .about-card.alt {
+    flex-direction: row-reverse;
+  }
+
+
+}
